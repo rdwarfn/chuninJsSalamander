@@ -68,8 +68,10 @@ define(function (require) {
     // - print var yg telah dibuat
     //   setiap var harus sukses di print
     // - print constants adresses
+    //   setiap constants harus sukses di print
     //   nilai constants harus menyertakan newline
     // - print constants locations
+    //   setiap constants harus sukses di print
     //   nilai constants harus berisi kumpulan dari
     //   data var / constants sebelumnya
 

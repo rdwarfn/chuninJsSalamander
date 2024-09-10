@@ -12,6 +12,16 @@ var single_quote_str = 'Haris Indratama'
 var double_special_str = "Haris Indratama\nJakarta"
 
 
+var firstName = "Haris"
+var lastName = "Indratama"
+var age = 17
+
+/**
+ * String Interpolation
+ * */
+var fullName = `${firstName} ${lastName}, age: ${age}`
+// var fullName = firstName + " " + lastName
+
 // data sample untuk tugas
 const dataUserLocation = {
     address: "taman anggrek residence",

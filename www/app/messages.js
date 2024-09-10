@@ -59,6 +59,10 @@ define(function () {
              * 3. Buatlah constants dngn nama locations,
              *    yg nilainya menyatukan constant addresses,
              *    var city, province dan postcode
+             * 
+             * Catatan:
+             * - lihat kembali file materi
+             * - Gunakan string interpolasi pada tugas 3
              */
 
             // tulis code dibawah ini
