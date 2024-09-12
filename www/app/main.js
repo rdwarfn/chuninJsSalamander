@@ -61,7 +61,6 @@ define(function (require) {
      */
 
     print("[testString]: run")
-
     var testString = messages.testString()
 
     // diharapkan:
@@ -87,6 +86,7 @@ define(function (require) {
      */
 
     print("[testUndefinedValues]: run")
+    var testUndefinedValues = messages.testUndefinedValues()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -108,6 +108,7 @@ define(function (require) {
      */
 
     print("[testBooleanValues]: run")
+    var testBooleanValues = messages.testBooleanValues()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -119,4 +120,28 @@ define(function (require) {
     // tulis code print di bawah ini
 
     print("[testBooleanValues]: finish")
+
+
+    /**
+     * 06. Instanceof Operator
+     * file materi  : js-primer/06.instanceof_operator
+     * file test    : app/messages.
+     */
+
+    print("[testInstanceofOperator]: run")
+    var testInstanceofOperator = messages.testInstanceofOperator()
+
+    /**
+     * diharapkan:
+     * - print var yg telah dibuat
+     *   setiap var harus sukses di print
+     *   nilai yg tampil adlh yg di assign
+     * - print constants yg telah dibuat
+     *   setiap constants harus sukses di print
+     *   nilai yg tampil harus boolean true
+     */
+
+    // tulis code print dibawah ini
+
+    print("[testInstanceofOperator]: finish")
 });
