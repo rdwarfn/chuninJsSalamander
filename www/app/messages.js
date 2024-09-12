@@ -157,6 +157,13 @@ define(function () {
              *   - Tidak boleh menggunakan fungsi Boolean()
              *   - Bandingkan tipe data untuk mendapat hasil boolean
              */
+
+            // tulis code dibawah ini
+
+            // sertakan semua code yg telah dibuat di return
+            return {
+                
+            }
         }
     };
 });
