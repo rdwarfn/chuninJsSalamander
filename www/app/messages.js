@@ -191,6 +191,17 @@ define(function () {
             //     "Expected Close Date": "2024-09-13",
             //     "International": new Boolean(false)
             // }]
+            const dataTasks = {
+                "Stage": "In Progress",
+                "Assigned To": null,
+                "Task URL": new String("https://app.puhun.com/workflows/2ylSaZ/tasks/ooCwnZ"),
+                "Company ID": new Number(42),
+                "Company Name": "Haris Corp",
+                "Number of Employees": "10",
+                "Contract Value": 10000.00,
+                "Expected Close Date": "2024-09-13",
+                "International": new Boolean(false)
+            }
 
             /**
              * Tugas:

@@ -7,6 +7,7 @@ define(function (require) {
     // Load library/vendor modules using
     // full IDs, like:
     var print = require('print');
+    var moment = require("moment/moment")
 
     /**
      * Disini semua test di dalam file message dijalankan
@@ -146,7 +147,7 @@ define(function (require) {
      /**
      * 06. Instanceof Operator
      * file materi  : js-primer/06.instanceof_operator
-     * file test    : app/messages.
+     * file test    : app/messages.testInstanceofOperator
      */
 
      print("[testInstanceofOperator]: run")
@@ -186,4 +187,23 @@ define(function (require) {
      print("[testStringInterpolasiDateObject]: finish")
 
 
+    print("[testInstanceofOperator]: finish")
+
+
+    /**
+     * 07. Date Objects
+     * file materi  : js-primer/07.date_objects
+     * file test    : app/messages.testDateObjects
+     */
+
+    print("[testDateObjects]: run")
+    const testDateObjects = messages.testDateObjects()
+
+    // tulis code print dibawah ini
+
+    const dateToday = moment(messages.dateToday).format("LLL")
+    
+    print(`[testDateObjects]: comments : ${dateToday}`)
+
+    print("[testDateObjects]: finish")
 });
