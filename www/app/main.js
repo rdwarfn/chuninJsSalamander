@@ -199,11 +199,14 @@ define(function (require) {
     print("[testDateObjects]: run")
     const testDateObjects = messages.testDateObjects()
 
+    /**
+     * diharapkan:
+     * - print tugas yg telah dibuat
+     *   setiap print harus sukses
+     */
+
     // tulis code print dibawah ini
 
-    const dateToday = moment(messages.dateToday).format("LLL")
-    
-    print(`[testDateObjects]: comments : ${dateToday}`)
 
     print("[testDateObjects]: finish")
 });

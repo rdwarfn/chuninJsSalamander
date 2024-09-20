@@ -65,3 +65,19 @@ var today = new Date()
  * - timezone: https://github.com/mde/timezone-js
  * - date.js: https://github.com/MatthewMueller/date
  */
+
+// moment.js
+// doc https://momentjs.com/docs/
+const moment = require("../../../lib/moment")
+
+// format params L
+var dateFL = moment(today).format("L")
+// console.log(dateFL) // 09/20/2024
+
+// format params LLL
+var dateFLLL = moment(today).format("LLL")
+// console.log(dateFLLL) // September 20, 2024 5:16 PM
+
+var dateFCustom = moment(today).format("DD/MM/YYYY hh:mm:ss")
+// console.log(dateFCustom) // 20/09/2024 05:24:22
+

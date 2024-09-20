@@ -318,7 +318,44 @@ define(function () {
                 monthCustom
             }
 
+        },
+
+
+        // 07. test date objects
+        testDateObjects () {
+            const dataComments = [
+                {
+                    "author" : "gus.hilmi@puhun.com",
+                    "body" : "Shalom shalom shalom. Get ready jamaah!, ibadah metaverse segera dimulai",
+                    "timestamp" : "2024-09-20T03:53:15.708Z"
+                },
+                {
+                    "author" : "jamaah.haris@puhun.com",
+                    "body" : "Siapp paboss @Gus Hilmi",
+                    "timestamp" : "2024-09-20T09:57:24.937Z"
+                },
+                {
+                    "author": "jamaah.ridwan@puhun.com",
+                    "body": "Siapp ngentod, eh guru @Gus Hilmi",
+                    "timestamp": "2024-09-20T09:57:24.937Z"
+                }
+            ]
+
+            /**
+             * Terdapat data balikan api comments
+             * Tugas:
+             * 1. Buatlah seperti contoh seperti gambar tugas-date_objects.png.
+             *
+             * Catatan:
+             * 1. Lihat kembali materi" dan testCase" sebelumnya sbg acuan
+             * 2. Tidak perlu sama seperti gambar, boleh improve dan buat sekreatif mungkin.
+             *    Tunjukan pesonamu, shalom
+             */
+
+
+            return {
+                dataComments
+            }
         }
-        
     };
 });
