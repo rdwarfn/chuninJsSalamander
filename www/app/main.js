@@ -66,7 +66,6 @@ define(function (require) {
      */
 
     print("[testString]: run")
-
     var testString = messages.testString()
 
     // diharapkan:
@@ -94,7 +93,11 @@ define(function (require) {
      */
 
     print("[testUndefinedValues]: run")
+<<<<<<< HEAD
     var testUndefinedValues = messages.testString()
+=======
+    var testUndefinedValues = messages.testUndefinedValues()
+>>>>>>> 00686ea09255cbcad751a4255e45d78a75e32562
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -123,7 +126,11 @@ define(function (require) {
      */
 
     print("[testBooleanValues]: run")
+<<<<<<< HEAD
     var testBooleanValues = messages.testString()
+=======
+    var testBooleanValues = messages.testBooleanValues()
+>>>>>>> 00686ea09255cbcad751a4255e45d78a75e32562
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -144,12 +151,18 @@ define(function (require) {
 
     print("[testBooleanValues]: finish")
 
+<<<<<<< HEAD
      /**
+=======
+
+    /**
+>>>>>>> 00686ea09255cbcad751a4255e45d78a75e32562
      * 06. Instanceof Operator
      * file materi  : js-primer/06.instanceof_operator
      * file test    : app/messages.
      */
 
+<<<<<<< HEAD
      print("[testInstanceofOperator]: run")
      var testInstanceofOperator = messages.testInstanceofOperator()
  
@@ -187,4 +200,22 @@ define(function (require) {
      print("[testStringInterpolasiDateObject]: finish")
 
 
+=======
+    print("[testInstanceofOperator]: run")
+    var testInstanceofOperator = messages.testInstanceofOperator()
+
+    /**
+     * diharapkan:
+     * - print var yg telah dibuat
+     *   setiap var harus sukses di print
+     *   nilai yg tampil adlh yg di assign
+     * - print constants yg telah dibuat
+     *   setiap constants harus sukses di print
+     *   nilai yg tampil harus boolean true
+     */
+
+    // tulis code print dibawah ini
+
+    print("[testInstanceofOperator]: finish")
+>>>>>>> 00686ea09255cbcad751a4255e45d78a75e32562
 });

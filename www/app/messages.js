@@ -247,6 +247,7 @@ define(function () {
             }
         },
 
+<<<<<<< HEAD
         testStringInterpolasiDateObject() {
             // membuat objek tanggal
             const currentDate = new Date();
@@ -307,6 +308,45 @@ define(function () {
                 monthCustom
             }
 
+=======
+        
+        // 06. test instanceof operator
+        testInstanceofOperator () {
+            const dataTasks = [{
+                "Stage": "In Progress",
+                "Assigned To": null,
+                "Task URL": new String("https://app.puhun.com/workflows/2ylSaZ/tasks/ooCwnZ"),
+                "Company ID": new Number(42),
+                "Company Name": "Haris Corp",
+                "Number of Employees": "10",
+                "Contract Value": 10000.00,
+                "Expected Close Date": "2024-09-13",
+                "International": new Boolean(false)
+            }]
+
+            /**
+             * Tugas:
+             * 1. Buatlah var dgn nama pada dataTasks
+             * 2. Buatlah masing" constants nya dgn nama
+             *    is(var nama)(tipe data).
+             *    Cek masing" nilai pada constants
+             *    menggunakan perbandingan yg telah dipelajari.
+             *    Nilai akhir adlh boolean.
+             * 
+             * Catatan:
+             *   - Cek kembali materi" sebelumnya
+             *   - Nama harus mengikuti konvensi penamaan pd JS
+             *   - Tidak boleh menggunakan fungsi Boolean()
+             *   - Bandingkan tipe data untuk mendapat hasil boolean
+             */
+
+            // tulis code dibawah ini
+
+            // sertakan semua code yg telah dibuat di return
+            return {
+                
+            }
+>>>>>>> 00686ea09255cbcad751a4255e45d78a75e32562
         }
         
     };
