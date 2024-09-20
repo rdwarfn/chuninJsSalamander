@@ -35,12 +35,22 @@ define(function () {
              */
 
             // tulis code dibawah ini
+            const id = 1;
+            const username = "Hariz";
+            const address = "Jl. Raya Pondok Cabe";
+            const password = "12345";
+            const email = "jschunin@gmail.com";
+
 
 
 
             // sertakan semua code yg telah dibuat di return
             return {
-                
+                id,
+                username,
+                address,
+                password,
+                email
             }
         },
 
@@ -66,10 +76,21 @@ define(function () {
              */
 
             // tulis code dibawah ini
+            var address = "Taman Anggrek Residence";
+            var subDistrict = "Tanjung Duren Selatan";
+            var district = "Grogol Petamburan";
+            var province = "DKI Jakarta";
+            var postCode = "11470";
+
+            const addresses = `${address} \n${subDistrict} \n${district}\n`;
+            const locations = `${addresses} ${province} ${postCode}`
+
 
 
             // sertakan semua code yg telah dibuat di return
             return {
+              addresses,
+              locations
 
             }
         },
@@ -91,12 +112,21 @@ define(function () {
              */
 
             // tulis code dibawah ini
-
-
-
-            // sertakan semua code yg telah dibuat di return
+            var favouriteSong;
+            var favouriteBand;
+        
+            const isEqualUndefined_favouriteSong = favouriteSong == undefined;
+            const isEqualUndefined_favouriteBand = favouriteBand == undefined;
+            const isEqualNull_favouriteSong = favouriteSong == null;
+            const isEqualNull_favouriteBand = favouriteBand == null;
+        
             return {
-
+                favouriteSong,
+                favouriteBand,
+                isEqualUndefined_favouriteSong,
+                isEqualUndefined_favouriteBand,
+                isEqualNull_favouriteSong,
+                isEqualNull_favouriteBand
             }
         },
 
@@ -120,11 +150,164 @@ define(function () {
              */
 
             // tulis code dibawah ini
+            var nokia = "12";
+            var samsung = "8";
+            var realme = "10";
+            var huawei = "7"
+
+            const isNokiaTrue = Boolean(nokia)
+            const isSamsungTrue = Boolean(samsung)
+            const isRealmeTrue = Boolean(realme)
+            const isHuaweiTrue = Boolean(huawei)
+            const isNokiaFalse = Boolean()
+            const isSamsungFalse = Boolean()
+            const isRealmeFalse = Boolean()
+            const isHuaweiFalse = Boolean()
+            
+            // sertakan semua code yg telah dibuat di return
+            return {
+              isNokiaTrue,
+              isSamsungTrue,
+              isRealmeTrue,
+              isHuaweiTrue,
+              isNokiaFalse,
+              isSamsungFalse,
+              isRealmeFalse,
+              isHuaweiFalse
+
+            }
+        },
+
+        // 06. test instanceof operator
+        testInstanceofOperator () {
+            // const dataTasks = [{
+            //     "Stage": "In Progress",
+            //     "Assigned To": null,
+            //     "Task URL": new String("https://app.puhun.com/workflows/2ylSaZ/tasks/ooCwnZ"),
+            //     "Company ID": new Number(42),
+            //     "Company Name": "Haris Corp",
+            //     "Number of Employees": "10",
+            //     "Contract Value": 10000.00,
+            //     "Expected Close Date": "2024-09-13",
+            //     "International": new Boolean(false)
+            // }]
+
+            /**
+             * Tugas:
+             * 1. Buatlah var dgn nama pada dataTasks
+             * 2. Buatlah masing" constants nya dgn nama
+             *    is(var nama)(tipe data).
+             *    Cek masing" nilai pada constants
+             *    menggunakan perbandingan yg telah dipelajari.
+             *    Nilai akhir adlh boolean.
+             * 
+             * Catatan:
+             *   - Cek kembali materi" sebelumnya
+             *   - Nama harus mengikuti konvensi penamaan pd JS
+             *   - Tidak boleh menggunakan fungsi Boolean()
+             *   - Bandingkan tipe data untuk mendapat hasil boolean
+             */
+
+            // tulis code dibawah ini
+            var dataTaksk = {
+                stage: new String ("In Progress"),
+                assignedTo: new Number (null),
+                taskUrl: new String ("https://app.puhun.com/workflows/2ylSaZ/tasks/ooCwnZ"),
+                companyId: new Number (42),
+                companyName: new String ("Haris Corp"),
+                numberOfEmployees: new Number (10),
+                contractValue: new Number (10000.00),
+                expectedCloseDate: new String ("2024-09-13"),
+                international: new Boolean (false)
+
+            };
+
+            const isStage = dataTaksk.stage instanceof String;
+            const isAssignedToNumber = dataTaksk.assignedTo instanceof Number;
+            const isTaskUrl = dataTaksk.taskUrl instanceof String;
+            const isCompanyId = dataTaksk.companyId instanceof Number;
+            const isCompanyName = dataTaksk.companyName instanceof String;
+            const isNumberOfEmployees = dataTaksk.numberOfEmployees instanceof Number;
+            const isContractValue = dataTaksk.contractValue instanceof Number;
+            const isExpectedCloseDate = dataTaksk.expectedCloseDate instanceof String;
+            const isInternasional = dataTaksk.international instanceof Boolean;
+
 
             // sertakan semua code yg telah dibuat di return
             return {
-
+                isStage,
+                isAssignedToNumber,
+                isTaskUrl,
+                isCompanyId,
+                isCompanyName,
+                isNumberOfEmployees,
+                isContractValue,
+                isExpectedCloseDate,
+                isInternasional
             }
+        },
+
+        testStringInterpolasiDateObject() {
+            // membuat objek tanggal
+            const currentDate = new Date();
+            const postedDate = new Date("2019-10-16")
+            const updatedDate = new Date("2023-1-3")
+
+            // membuat array nama bulan
+            const monthFullName = [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember"
+            ];
+            const monthShortName = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Des"
+            ];
+
+            //mengambil bagian-bagian dari waktu
+
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            const day = currentDate.getDate();
+            const shortYear = String(year).slice(-2);
+            const postedYear = postedDate.getFullYear();
+            const postedMonth = postedDate.getMonth();
+            const postedDay = postedDate.getDate();
+            const updatedYear = updatedDate.getFullYear();
+            const updatedMonth = updatedDate.getMonth();
+            const updatedDay = updatedDate.getDate();
+
+            // menggunakan string interpolasi
+            const fullMonth = `Terakhir diperbarui: ${day} ${monthFullName[month]} ${year}`;
+            const shortMonth = `${monthShortName[month]} ${day}'${shortYear}`;
+            const monthCustom = `Posted On ${monthShortName[postedMonth]} ${postedDay}, ${postedYear} Updated On ${monthShortName[updatedMonth]} ${updatedDay}, ${updatedYear}`
+
+            return {
+                fullMonth,
+                shortMonth,
+                monthCustom
+            }
+
         }
+        
     };
 });

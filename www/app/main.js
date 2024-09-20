@@ -50,6 +50,11 @@ define(function (require) {
     //   constants yg nilainya diubah harus gagal atau error
 
     // tulis code print di bawah ini
+    print(testConstants.id)
+    print(testConstants.username)
+    print(testConstants.address)
+    print(testConstants.password)
+    print(testConstants.email)
 
     print("[testConstants]: finish")
 
@@ -76,6 +81,8 @@ define(function (require) {
     //   data var / constants sebelumnya
 
     // tulis code print di bawah ini
+    print(testString.addresses)
+    print(testString.locations)
 
     print("[testString]: finish")
 
@@ -87,6 +94,7 @@ define(function (require) {
      */
 
     print("[testUndefinedValues]: run")
+    var testUndefinedValues = messages.testString()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -97,6 +105,13 @@ define(function (require) {
     //   setiap print harus bernilai boolean true
 
     // tulis code print di bawah ini
+    print(testUndefinedValues.myVariable1)
+    print(testUndefinedValues.myVariable2)
+    print(testUndefinedValues.isEqualUndefined_myVariable1)
+    print(testUndefinedValues.isEqualUndefined_myVariable2)
+    print(testUndefinedValues.isEqualNull_myVariable1)
+    print(testUndefinedValues.isEqualNull_myVariable2)
+   
 
     print("[testUndefinedValues]: finish")
 
@@ -108,6 +123,7 @@ define(function (require) {
      */
 
     print("[testBooleanValues]: run")
+    var testBooleanValues = messages.testString()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -117,6 +133,58 @@ define(function (require) {
     //   setiap print harus bernilai boolean: 4 kali true, 4 kali false
 
     // tulis code print di bawah ini
+    print(testBooleanValues.isNokiaTrue)
+    print(testBooleanValues.isSamsungTrue)
+    print(testBooleanValues.isRealmeTrue)
+    print(testBooleanValues.isHuaweiTrue)
+    print(testBooleanValues.isNokiaFalse)
+    print(testBooleanValues.isSamsungFalse)
+    print(testBooleanValues.isRealmeFalse)
+    print(testBooleanValues.isHuaweiFalse)
 
     print("[testBooleanValues]: finish")
+
+     /**
+     * 06. Instanceof Operator
+     * file materi  : js-primer/06.instanceof_operator
+     * file test    : app/messages.
+     */
+
+     print("[testInstanceofOperator]: run")
+     var testInstanceofOperator = messages.testInstanceofOperator()
+ 
+     /**
+      * diharapkan:
+      * - print var yg telah dibuat
+      *   setiap var harus sukses di print
+      *   nilai yg tampil adlh yg di assign
+      * - print constants yg telah dibuat
+      *   setiap constants harus sukses di print
+      *   nilai yg tampil harus boolean true
+      */
+ 
+     // tulis code print dibawah ini
+     print(testInstanceofOperator.isStage)
+     print(testInstanceofOperator.isAssignedToNumber)
+     print(testInstanceofOperator.isTaskUrl)
+     print(testInstanceofOperator.isCompanyId)
+     print(testInstanceofOperator.isCompanyName)
+     print(testInstanceofOperator.isNumberOfEmployees)
+     print(testInstanceofOperator.isContractValue)
+     print(testInstanceofOperator.isExpectedCloseDate)
+     print(testInstanceofOperator.isInternasional)
+ 
+     print("[testInstanceofOperator]: finish")
+
+     print("[testStringInterpolasiDateObject]: run")
+     var testStringInterpolasiDateObject = messages.testStringInterpolasiDateObject()
+
+     print(testStringInterpolasiDateObject.fullMonth)
+     print(testStringInterpolasiDateObject.shortMonth)
+     print(testStringInterpolasiDateObject.monthCustom)
+
+
+     print("[testStringInterpolasiDateObject]: finish")
+
+
 });
