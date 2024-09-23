@@ -30,3 +30,23 @@ const dataUserLocation = {
     province: "DKI Jakarta",
     postcode: 11470,
 }
+
+
+/**
+ * The charAt() Method
+ * 
+ * chatAt merupakan fungsi bawaan (build in method) dari string.
+ * fungsi chartAt() mengembalikan nilai karakter dari string
+ * berdasarkan index yg menjadi parameter nya
+ * 
+ * dokumentasi:
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
+ * 
+ * 
+ */
+
+var author = 'hilmi@puhun.com'
+var index = 0
+// console.log(author.charAt(index)) // h
+
+// console.log(author.charAt(1)) // i
