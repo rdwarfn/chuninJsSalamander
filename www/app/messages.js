@@ -1,3 +1,5 @@
+
+// 
 define(function () {
     return {
         // 01. test materi variables
@@ -322,7 +324,9 @@ define(function () {
 
 
         // 07. test date objects
+        
         testDateObjects () {
+          
             const dataComments = [
                 {
                     "author" : "gus.hilmi@puhun.com",
@@ -351,11 +355,22 @@ define(function () {
              * 2. Tidak perlu sama seperti gambar, boleh improve dan buat sekreatif mungkin.
              *    Tunjukan pesonamu, shalom
              */
+            // dataComments.forEach(function(date) {
+            //   date.timestamp = moment(date.timestamp).format("D MMM YYYY h:mm") 
+            // });
+
+            const authorHilmi = dataComments[0]
+            const authorHariz = dataComments[1]
+            const authorRidwan = dataComments[2]
 
 
             return {
-                dataComments
+                dataComments,
+                authorHariz,
+                authorHilmi,
+                authorRidwan
             }
+            
         }
     };
 });

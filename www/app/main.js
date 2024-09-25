@@ -3,16 +3,17 @@ define(function (require) {
     // with a relative require call,
     // like:
     var messages = require('./messages');
+    var moment = require("moment/moment");
 
     // Load library/vendor modules using
     // full IDs, like:
     var print = require('print');
-    var moment = require("moment/moment")
+
 
     /**
      * Disini semua test di dalam file message dijalankan
      */
-    
+
     /**
      * 01. Variables
      * file materi  : js-primer/01.variables.js
@@ -111,7 +112,7 @@ define(function (require) {
     print(testUndefinedValues.isEqualUndefined_myVariable2)
     print(testUndefinedValues.isEqualNull_myVariable1)
     print(testUndefinedValues.isEqualNull_myVariable2)
-   
+
 
     print("[testUndefinedValues]: finish")
 
@@ -144,50 +145,50 @@ define(function (require) {
 
     print("[testBooleanValues]: finish")
 
-     /**
-     * 06. Instanceof Operator
-     * file materi  : js-primer/06.instanceof_operator
-     * file test    : app/messages.testInstanceofOperator
+    /**
+    * 06. Instanceof Operator
+    * file materi  : js-primer/06.instanceof_operator
+    * file test    : app/messages.testInstanceofOperator
+    */
+
+    print("[testInstanceofOperator]: run")
+    var testInstanceofOperator = messages.testInstanceofOperator()
+
+    /**
+     * diharapkan:
+     * - print var yg telah dibuat
+     *   setiap var harus sukses di print
+     *   nilai yg tampil adlh yg di assign
+     * - print constants yg telah dibuat
+     *   setiap constants harus sukses di print
+     *   nilai yg tampil harus boolean true
      */
 
-     print("[testInstanceofOperator]: run")
-     var testInstanceofOperator = messages.testInstanceofOperator()
- 
-     /**
-      * diharapkan:
-      * - print var yg telah dibuat
-      *   setiap var harus sukses di print
-      *   nilai yg tampil adlh yg di assign
-      * - print constants yg telah dibuat
-      *   setiap constants harus sukses di print
-      *   nilai yg tampil harus boolean true
-      */
- 
-     // tulis code print dibawah ini
-     print(testInstanceofOperator.isStage)
-     print(testInstanceofOperator.isAssignedToNumber)
-     print(testInstanceofOperator.isTaskUrl)
-     print(testInstanceofOperator.isCompanyId)
-     print(testInstanceofOperator.isCompanyName)
-     print(testInstanceofOperator.isNumberOfEmployees)
-     print(testInstanceofOperator.isContractValue)
-     print(testInstanceofOperator.isExpectedCloseDate)
-     print(testInstanceofOperator.isInternasional)
- 
-     print("[testInstanceofOperator]: finish")
-
-     print("[testStringInterpolasiDateObject]: run")
-     var testStringInterpolasiDateObject = messages.testStringInterpolasiDateObject()
-
-     print(testStringInterpolasiDateObject.fullMonth)
-     print(testStringInterpolasiDateObject.shortMonth)
-     print(testStringInterpolasiDateObject.monthCustom)
-
-
-     print("[testStringInterpolasiDateObject]: finish")
-
+    // tulis code print dibawah ini
+    print(testInstanceofOperator.isStage)
+    print(testInstanceofOperator.isAssignedToNumber)
+    print(testInstanceofOperator.isTaskUrl)
+    print(testInstanceofOperator.isCompanyId)
+    print(testInstanceofOperator.isCompanyName)
+    print(testInstanceofOperator.isNumberOfEmployees)
+    print(testInstanceofOperator.isContractValue)
+    print(testInstanceofOperator.isExpectedCloseDate)
+    print(testInstanceofOperator.isInternasional)
 
     print("[testInstanceofOperator]: finish")
+
+    print("[testStringInterpolasiDateObject]: run")
+    var testStringInterpolasiDateObject = messages.testStringInterpolasiDateObject()
+
+    print(testStringInterpolasiDateObject.fullMonth)
+    print(testStringInterpolasiDateObject.shortMonth)
+    print(testStringInterpolasiDateObject.monthCustom)
+
+
+    print("[testStringInterpolasiDateObject]: finish")
+
+
+    
 
 
     /**
@@ -206,6 +207,36 @@ define(function (require) {
      */
 
     // tulis code print dibawah ini
+    // print(testDateObjects.dataComments)
+    
+    const authorHilmi = testDateObjects.authorHilmi
+    authorHilmi.timestamp = moment(authorHilmi.timestamp).format("D MMM YYYY h:mm")
+    const authorHariz = testDateObjects.authorHariz
+    authorHariz.timestamp = moment(authorHariz.timestamp).format("D MMM YYYY h:mm")
+    const authorRidwan = testDateObjects.authorRidwan
+    authorRidwan.timestamp = moment(authorRidwan.timestamp).format("D MMM YYYY h:mm")
+
+
+    // print(authorHilmi)
+    // print(authorHaris)
+    // print(authorRidwan)
+    const authorConversation = authorHilmi.author
+    const charAtConversation = authorConversation.charAt(0)
+    const authorConversation2 = authorHariz.author
+    const charAtConversation2 = authorConversation2.charAt(0)
+    const authorConversation3 = authorRidwan.author
+    const charAtConversation3 = authorConversation3.charAt(0)
+    
+    // menggunakan string interpolasi
+    const conversation  = `${charAtConversation} : ${authorHilmi.body} \n${authorHilmi.timestamp} oleh ${authorHilmi.author}`
+    const conversation2  = `${charAtConversation2} : ${authorHariz.body} \n${authorHariz.timestamp} oleh ${authorHariz.author}`
+    const conversation3  = `${charAtConversation3} : ${authorRidwan.body} \n${authorRidwan.timestamp} oleh ${authorRidwan.author}`
+    
+
+    print(conversation)
+    print(conversation2)
+    print(conversation3)
+    
 
 
     print("[testDateObjects]: finish")
