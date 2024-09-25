@@ -240,4 +240,34 @@ define(function (require) {
 
 
     print("[testDateObjects]: finish")
+
+
+    /**
+     * 08.3 Example: Loop and Iteration
+     * file materi  : js-primer/08.3.loop_and_iteration
+     */
+    print("[exampleLoopAndIteration]: run")
+    
+    function countSelected(selectObject) {
+
+        // main
+        let numberSelected = 0;
+        for (let i = 0; i < selectObject.options.length; i++) {
+            if (selectObject.options[i].selected) {
+                numberSelected++;
+            }
+        }
+
+
+        return numberSelected;
+    }
+    
+    const btn = document.getElementById("btn");
+    
+    btn.addEventListener("click", () => {
+        const musicTypes = document.selectForm.musicTypes;
+        print(`You have selected ${countSelected(musicTypes)} option(s).`);
+    });
+
+    print("[exampleLoopAndIteration]: finish")
 });
