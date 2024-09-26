@@ -270,4 +270,35 @@ define(function (require) {
     });
 
     print("[exampleLoopAndIteration]: finish")
+
+    print("[exampleDropdown]: run")
+
+    function dropdownSelected(selectValue){
+
+        let valueSelected = [];
+        for (let a =1;a < selectValue.options.length;a++){
+            if(selectValue.options[a].selected){
+                valueSelected.push(selectValue.options[a].text);
+            }
+        }
+        return valueSelected;
+    }
+
+    const btnResult = document.getElementById("btnResult");
+
+    btnResult.addEventListener("click", () => {
+        const dropdownSelect = document.selectDropdown.dropdownTypes;
+        const selectedValues = dropdownSelected(dropdownSelect);
+    
+
+        if (selectedValues.length > 0) {
+            print(`You selected: ${selectedValues.join(', ')}`);
+        } else {
+            
+            print("Please select at least one option.");
+        }
+        
+       
+    });
+    print("[exampleDropdown]: finish")
 });
