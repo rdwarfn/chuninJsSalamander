@@ -301,4 +301,25 @@ define(function (require) {
        
     });
     print("[exampleDropdown]: finish")
+
+
+
+    /**
+     * 08. Plus" Operator & Loop and Iteration
+     * file materi  : js-primer/08.*
+     * file test    : app/messages.testPlerlonte
+     */
+
+    print("[testPlerlonte]: run")
+    var testPlerlonte = messages.testPlerlonte()
+
+    /**
+     * diharapkan:
+     * - print tugas yg telah dikerjakan
+     *   setiap print harus sukses di print
+     */
+
+    // tulis code
+
+    print("[testPlerlonte]: finish")
 });
