@@ -65,3 +65,41 @@ for (var i = 0; i < listOfMusicType.length; i++) {
     // if (getListByIndex == "Punk")
 
 }
+
+var dataA = [
+    {
+        "nilaiA": 123,
+        "nilaiB": 234,
+        "rataRata": "Baik"
+    },
+
+    {
+        "nilaiA": 123,
+        "nilaiB": 234,
+        "rataRata": "Cukup"
+    }
+];
+
+var countBaik = 0, countCukup = 0;
+
+
+for (let i = 0; i < dataA.length; i++) {
+
+    let getDataAObject = dataA[i];
+
+    // if (getDataAObject.nilaiA == 123) {
+
+    // }
+
+
+    if (getDataAObject.rataRata == "Baik") {
+
+        countBaik++
+
+    } else if (getDataAObject.rataRata == "Cukup") {
+
+        countCukup++
+
+    }
+
+}
