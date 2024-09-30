@@ -456,6 +456,91 @@ define(function () {
             return {
                 dataJoke
             }   
-        }
+        },
+
+        // 08. test ++ operator & loop and iteration
+        // Plerlonte: Plus Operator & Loop and Iteration
+        testPlerlonteDoWhile () {
+
+            const dataGusJokes = [
+                {
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"1",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/1",
+                    "value":"Kenapa air laut asin??,\nKarena ikannya pada keringetan."
+                },
+                {
+                    "category":"food",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"2",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/2",
+                    "value":"Suku..suku apa yang banyak berkeliaran di mall??,\nSuku-riti."
+                },
+                {
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"3",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/3",
+                    "value":"Kenapa dokter jika akan mengoperasi mulutnya ditutup??,\nKarena kalo matanya yang ditutup itu bajak laut."
+                },
+                {
+                    "category":"food",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"4",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/4",
+                    "value":"Hewan.. hewan apa yang deket banget sama temen??,\nA Crab."
+                },
+                {
+                    "category":"sports",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"5",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/5",
+                    "value":"Siapa pemain bola yang punya usaha pengobatan??,\nDavid Bekam."
+                },
+                {
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"6",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/6",
+                    "value":"Apa yang badannya hijau, kepalanya merah, jalannya mundur??,\nObat nyamuk bakar."
+                },
+                {
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"7",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/7",
+                    "value":"Kenapa di keyboard komputer ada tulisan ‘ENTER’??,\nKarena kalau tulisannya ‘ENTAR’, programnya nggak jalan-jalan."
+                }
+            ];
+
+            /**
+             * Terdapat dataGusJokes seperti diatas
+             * 
+             * Tugas:
+             * 0. Print menggunakan do..while dan while
+             * 1. Print semua data attribute yg ada
+             * 2. Hitung berapa category yg ada
+             * 3. Untuk while, pada attribute id
+             *    dikalikan 2
+             * 
+             * Catatan:
+             * -  Format data attribute yg bernilai date,
+             *    boleh berkreasi spy lebih mudah dibaca jamaah
+             * -  Lihat kembali test" yg pernah dikerjakan
+             */
+            const dataJoke = dataGusJokes
+
+            return {
+                dataJoke
+            }   
+        },
     };
 });

@@ -351,4 +351,24 @@ define(function (require) {
     print(categoryResult)
     
     print("[testPlerlonte]: finish")
+
+
+    /**
+     * 08.1 Plus" Operator & Loop and Iteration (do..while, while)
+     * file materi  : js-primer/08.*
+     * file test    : app/messages.testPlerlonteDoWhile
+     */
+
+    print("[testPlerlonteDoWhile]: run")
+    var testPlerlonteDoWhile = messages.testPlerlonteDoWhile()
+
+    /**
+     * diharapkan:
+     * - print tugas yg telah dikerjakan
+     *   setiap print harus sukses di print
+     */
+
+    // tulis code dibawah
+    
+    print("[testPlerlonteDoWhile]: finish")
 });
