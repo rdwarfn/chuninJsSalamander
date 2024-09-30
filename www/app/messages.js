@@ -451,10 +451,11 @@ define(function () {
              *    boleh berkreasi spy lebih mudah dibaca jamaah
              * -  Lihat kembali test" yg pernah dikerjakan
              */
+            const dataJoke = dataGusJokes
 
             return {
-                dataGusJokes
-            }
+                dataJoke
+            }   
         }
     };
 });

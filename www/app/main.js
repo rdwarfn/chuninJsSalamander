@@ -320,6 +320,35 @@ define(function (require) {
      */
 
     // tulis code
+    const dataJokes = testPlerlonte.dataJoke
+    let categoryOfFood = 0, categoryOfScience = 0, categoryOfSport = 0;
+    print(dataJokes)
 
+    for (let i = 0; i < dataJokes.length; i++) {
+        let getDataCategory = dataJokes[i];
+        const formatDate = moment(getDataCategory.created_at).format("D MMM YYYY h:mm A");
+        
+    // print(`Category: ${getDataCategory.category}`)
+    // print(`Value: ${getDataCategory.value}`) 
+    // print(`Created at: ${formatDate}`)
+
+    var dataResult = `Category: ${getDataCategory.category}\n Value: ${getDataCategory.value}\n ${formatDate}`
+    print(dataResult) 
+
+        if (getDataCategory.category == "science"){
+            categoryOfScience++;
+        } else if (getDataCategory.category == "food"){
+            categoryOfFood++;
+        } else if (getDataCategory.category == "sports"){ 
+            categoryOfSport++;
+        }
+    }
+    // print("Total Category Science: " + categoryOfScience);
+    // print("Total Category Food: " + categoryOfFood);
+    // print("Total Category Sports: " + categoryOfSport);  
+    
+    var categoryResult = `Total Category Science: ${categoryOfScience}\n Total Category Food: ${categoryOfFood}\n Total Category Sports: ${categoryOfSport}`
+    print(categoryResult)
+    
     print("[testPlerlonte]: finish")
 });
