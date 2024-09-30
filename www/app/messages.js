@@ -533,11 +533,12 @@ define(function () {
              * 
              * Catatan:
              * -  Format data attribute yg bernilai date,
+             *    Sen, 30 Sep 2024 pukul 11.38
              *    boleh berkreasi spy lebih mudah dibaca jamaah
              * -  Lihat kembali test" yg pernah dikerjakan
              */
             const dataJoke = dataGusJokes
-
+            
             return {
                 dataJoke
             }   

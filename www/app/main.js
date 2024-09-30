@@ -4,7 +4,8 @@ define(function (require) {
     // like:
     var messages = require('./messages');
     var moment = require("moment/moment");
-
+    require('moment/locale/id');
+    
     // Load library/vendor modules using
     // full IDs, like:
     var print = require('print');
@@ -320,13 +321,13 @@ define(function (require) {
      */
 
     // tulis code
-    const dataJokes = testPlerlonte.dataJoke
+    let dataJokes = testPlerlonte.dataJoke
     let categoryOfFood = 0, categoryOfScience = 0, categoryOfSport = 0;
     print(dataJokes)
 
     for (let i = 0; i < dataJokes.length; i++) {
         let getDataCategory = dataJokes[i];
-        const formatDate = moment(getDataCategory.created_at).format("D MMM YYYY h:mm A");
+        const formatDate = moment(getDataCategory.created_at).format("dddd, D MMM YYYY h:mm A");
         
     // print(`Category: ${getDataCategory.category}`)
     // print(`Value: ${getDataCategory.value}`) 
@@ -347,8 +348,9 @@ define(function (require) {
     // print("Total Category Food: " + categoryOfFood);
     // print("Total Category Sports: " + categoryOfSport);  
     
-    var categoryResult = `Total Category Science: ${categoryOfScience}\n Total Category Food: ${categoryOfFood}\n Total Category Sports: ${categoryOfSport}`
+    var categoryResult = `Total Category Science: ${categoryOfScience}\nTotal Category Food: ${categoryOfFood}\nTotal Category Sports: ${categoryOfSport}`
     print(categoryResult)
+    
     
     print("[testPlerlonte]: finish")
 
@@ -369,6 +371,44 @@ define(function (require) {
      */
 
     // tulis code dibawah
+    let dataOfJokes = testPlerlonteDoWhile.dataJoke;
+    let i = 0;
+    
+    print("Do While")
+
+    do {
+     
+        let getDataJokes = dataOfJokes[i];
+        moment.locale('id')
+
+        var momentDate = moment(getDataJokes.created_at).format("ddd, D MMM YYYY [Pukul] h:mm");
+
+        const resultJokesDoWhile = `No.${getDataJokes.id}: ${getDataJokes.category}\n${getDataJokes.value}\n${momentDate} at ${getDataJokes.url}\n`;
+        print(resultJokesDoWhile);     
+        
+    
+    i++; 
+    
+    } while (i < dataOfJokes.length);
+    print(categoryResult)
+   
+    print("While")
+    
+    i = 0;
+
+    while (i < dataOfJokes.length) { 
+        let getDataJokes = dataOfJokes[i];
+        let jokeId = +getDataJokes.id
+        jokeId = jokeId*2
+        // print(typeof jokeId)
+        
+        const resultJokesWhile = `No.${jokeId}: ${getDataJokes.category}\n${getDataJokes.value}\n${momentDate} at ${getDataJokes.url}\n`;
+        print(resultJokesWhile);
+    
+        i++; 
+    }
+
+    print(categoryResult)
     
     print("[testPlerlonteDoWhile]: finish")
 });
