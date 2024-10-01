@@ -457,4 +457,55 @@ define(function (require) {
     }
 
     print("[testPlerlonteDom]: finish")
+
+    print("[testDisplayImage]: run")
+    var testDisplayImage = messages.testDisplayImage()
+
+    // tulis code
+    const btnImage = document.getElementById("btnImage");
+    const tableHeader = document.getElementById("tableHeader")
+    const dataOfBand = testDisplayImage.dataBand; 
+
+    btnImage.addEventListener("click", toggleImageDisplay);
+
+    function toggleImageDisplay() {
+        const tableContent = document.getElementById("tableContent");
+        
+        if (tableContent.innerHTML === "") {
+            showImage(); 
+            tableHeader.style.display = "table-header-group";
+        } else {
+            
+            tableContent.innerHTML = "";
+            tableHeader.style.display = "none";
+        }
+    }
+
+    function showImage() {
+        const tableContent = document.getElementById("tableContent");
+        let rows = "";
+
+        for (let i = 0; i < dataOfBand.length; i++) {
+    
+            let getDataOfBand = dataOfBand[i];
+            const formatDateBand = moment(getDataOfBand.created_at).format("LLLL")
+        
+            rows += `
+                <tr>
+                    <td>${getDataOfBand.id}</td>
+                    <td class="text-capitalize">${getDataOfBand.category}</td>
+                    <td>
+                        <img class="img-fluid" width="150" height="100" src="${getDataOfBand.imageUrl}" alt="${getDataOfBand.imageMeta}">
+                    </td>
+                    <td>${getDataOfBand.value}</td>
+                    <td>${formatDateBand}</td>
+                    <td><a href="${getDataOfBand.url}" target="_blank">${getDataOfBand.url}</a></td>
+                </tr>
+            `;
+    };
+
+        tableContent.innerHTML = rows; 
+    
+    }
+    print("[testDisplayImage]: finish")
 });
