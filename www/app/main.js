@@ -411,4 +411,50 @@ define(function (require) {
     print(categoryResult)
     
     print("[testPlerlonteDoWhile]: finish")
+
+
+    /**
+     * 08. Example Plerlonte DOM
+     * file materi  : js-primer/08.*
+     * file test    : app/messages.testPlerlonteDom
+     */
+
+    print("[testPlerlonteDom]: run")
+    var testPlerlonteDom = messages.testPlerlonteDom()
+
+    // tulis code
+    const btnPlerlonteDOM = document.getElementById("btnPlerlonteDOM");
+
+    btnPlerlonteDOM.addEventListener("click", initPlerlonteDOM);
+
+    const dataGusJokes = testPlerlonteDom.dataGusJokes;
+
+    function initPlerlonteDOM () {
+        const wrap = document.getElementById("08.plerlonte_dom");
+        const listOut = wrap.getElementsByClassName("list")[0]
+    
+        let strHtml = "<ul>";
+    
+        for (let i = 0; i < dataGusJokes.length; i++) {
+    
+            let getData = dataGusJokes[i];
+    
+            strHtml +=
+                "<li><div><h5 class='capitalize'>No." + getData.id +
+                ": " + getData.category + "<h5>" +
+                "<img width='300' height='250' src='" +
+                getData.imageUrl + "' alt='" + getData.imageMeta + "'" + " >" +
+                "<p>" + getData.value + "</p>" +
+                "<sub>" + getData.created_at + " at " +
+                "<a>" + getData.url + "</a>" + "<sub>"
+                "</div></li>";
+    
+        }
+    
+        strHtml += "</ul>";
+        listOut.innerHTML = strHtml;
+
+    }
+
+    print("[testPlerlonteDom]: finish")
 });

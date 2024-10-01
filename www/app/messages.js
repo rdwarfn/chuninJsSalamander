@@ -543,5 +543,86 @@ define(function () {
                 dataJoke
             }   
         },
+
+
+        // 08. example: test plerlonte DOM
+        testPlerlonteDom () {
+            const dataGusJokes = [
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/underwater-photography-funny-looking-parrot-600w-2444525305.jpg",
+                    "imageMeta": "Gus joke underwater",
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"1",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/1",
+                    "value":"Kenapa air laut asin??,\nKarena ikannya pada keringetan."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/jakarta-indonesia-july-6-2013-260nw-2377697137.jpg",
+                    "imageMeta": "Gus joke undermarket",
+                    "category":"food",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"2",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/2",
+                    "value":"Suku..suku apa yang banyak berkeliaran di mall??,\nSuku-riti."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/funny-doctor-isolated-on-white-260nw-133809956.jpg",
+                    "imageMeta": "Gus joke undertaker",
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"3",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/3",
+                    "value":"Kenapa dokter jika akan mengoperasi mulutnya ditutup??,\nKarena kalo matanya yang ditutup itu bajak laut."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/crabeating-macaque-baby-infant-sticking-260nw-2347171827.jpg",
+                    "imageMeta": "Gus joke understand",
+                    "category":"food",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"4",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/4",
+                    "value":"Hewan.. hewan apa yang deket banget sama temen??,\nA Crab."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/nerdy-guy-trying-do-exercise-260nw-1562276911.jpg",
+                    "imageMeta": "Gus joke underngentod",
+                    "category":"sports",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"5",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/5",
+                    "value":"Siapa pemain bola yang punya usaha pengobatan??,\nDavid Bekam."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/smouldering-repellent-spiral-mosquitoes-protection-260nw-2343936507.jpg",
+                    "imageMeta": "Gus joke underdeck",
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"6",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/6",
+                    "value":"Apa yang badannya hijau, kepalanya merah, jalannya mundur??,\nObat nyamuk bakar."
+                },
+                {
+                    "imageUrl": "https://www.shutterstock.com/image-photo/french-bulldog-sits-desk-office-260nw-1930042943.jpg",
+                    "imageMeta": "Gus joke underdog",
+                    "category":"science",
+                    "created_at":"2024-09-26T23:57:02.522Z",
+                    "id":"7",
+                    "updated_at":"2024-09-26T23:57:02.522Z",
+                    "url":"https://gus.puhun.com/khutbah/7",
+                    "value":"Kenapa di keyboard komputer ada tulisan ‘ENTER’??,\nKarena kalau tulisannya ‘ENTAR’, programnya nggak jalan-jalan."
+                }
+            ];
+
+            return {
+                dataGusJokes
+            }
+        }
     };
 });
