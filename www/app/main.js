@@ -486,10 +486,48 @@ define(function (require) {
         let rows = "";
 
         for (let i = 0; i < dataOfBand.length; i++) {
+            /**
+             * alur kerja let rows:
+             * 1. sebelum iterasi atau nilai awal rows = ""
+             * 
+             * 2. interasi ke i (0,1,2,3,4,5,6) pass:
+             *   rows = (nilai rows sebelumnya) + (nilai yg di passing)
+             * 
+             * 3. balik ke point 2
+             */
+
     
             let getDataOfBand = dataOfBand[i];
             const formatDateBand = moment(getDataOfBand.created_at).format("LLLL")
         
+            // sama aja
+            // rows = rows + `
+            //     <tr>
+            //         <td>${getDataOfBand.id}</td>
+            //         <td class="text-capitalize">${getDataOfBand.category}</td>
+            //         <td>
+            //             <img class="img-fluid" width="150" height="100" src="${getDataOfBand.imageUrl}" alt="${getDataOfBand.imageMeta}">
+            //         </td>
+            //         <td>${getDataOfBand.value}</td>
+            //         <td>${formatDateBand}</td>
+            //         <td><a href="${getDataOfBand.url}" target="_blank">${getDataOfBand.url}</a></td>
+            //     </tr>
+            // `;
+
+            // Yng tampil cuman nilai data yg terakhir 
+            // rows = `
+            //     <tr>
+            //         <td>${getDataOfBand.id}</td>
+            //         <td class="text-capitalize">${getDataOfBand.category}</td>
+            //         <td>
+            //             <img class="img-fluid" width="150" height="100" src="${getDataOfBand.imageUrl}" alt="${getDataOfBand.imageMeta}">
+            //         </td>
+            //         <td>${getDataOfBand.value}</td>
+            //         <td>${formatDateBand}</td>
+            //         <td><a href="${getDataOfBand.url}" target="_blank">${getDataOfBand.url}</a></td>
+            //     </tr>
+            // `;
+
             rows += `
                 <tr>
                     <td>${getDataOfBand.id}</td>
