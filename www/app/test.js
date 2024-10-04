@@ -240,3 +240,43 @@ function testDateObjects() {
 }
 const dateresult = testDateObjects();
 console.log(dateresult);
+
+function testBooleanValues() {
+    var dataMerkPhone = {
+        nokia: "12",
+        samsung: "8",
+        realme: "10",
+        huawei: "7"
+    };
+
+
+    
+    const isNokiaTrue = Boolean(dataMerkPhone.nokia);
+    const isSamsungTrue = Boolean(dataMerkPhone.samsung);
+    const isRealmeTrue = Boolean(dataMerkPhone.realme);
+    const isHuaweiTrue = Boolean(dataMerkPhone.huawei);
+
+    
+    const isNokiaFalse = !Boolean(dataMerkPhone.nokia);
+    const isSamsungFalse = !Boolean(dataMerkPhone.samsung);
+    const isRealmeFalse = !Boolean(dataMerkPhone.realme);
+    const isHuaweiFalse = !Boolean(dataMerkPhone.huawei);
+
+    
+    return {
+        dataMerkPhone,
+        isNokiaTrue,
+        isSamsungTrue,
+        isRealmeTrue,
+        isHuaweiTrue,
+        isNokiaFalse,
+        isSamsungFalse,
+        isRealmeFalse,
+        isHuaweiFalse
+    };
+}
+
+
+const resultBoolean = testBooleanValues();
+
+console.log(resultBoolean);

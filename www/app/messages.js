@@ -152,33 +152,39 @@ define(function () {
              */
 
             // tulis code dibawah ini
-            var nokia = "12";
-            var samsung = "8";
-            var realme = "10";
-            var huawei = "7"
-
-            const isNokiaTrue = Boolean(nokia)
-            const isSamsungTrue = Boolean(samsung)
-            const isRealmeTrue = Boolean(realme)
-            const isHuaweiTrue = Boolean(huawei)
-            const isNokiaFalse = Boolean()
-            const isSamsungFalse = Boolean()
-            const isRealmeFalse = Boolean()
-            const isHuaweiFalse = Boolean()
             
-            // sertakan semua code yg telah dibuat di return
-            return {
-              isNokiaTrue,
-              isSamsungTrue,
-              isRealmeTrue,
-              isHuaweiTrue,
-              isNokiaFalse,
-              isSamsungFalse,
-              isRealmeFalse,
-              isHuaweiFalse
+            
+                var dataMerkPhone = {
+                    nokia: "12",
+                    samsung: "8",
+                    realme: "10",
+                    huawei: "7"
+                   };
+               
+               const resultBoolean = {
+               isNokiaTrue : Boolean(dataMerkPhone.nokia),
+               isSamsungTrue : Boolean(dataMerkPhone.samsung),
+               isRealmeTrue : Boolean(dataMerkPhone.realme),
+               isHuaweiTrue : Boolean(dataMerkPhone.huawei),
+               isNokiaFalse : Boolean(!dataMerkPhone.nokia),
+               isSamsungFalse : Boolean(!dataMerkPhone.samsung),
+               isRealmeFalse : Boolean(!dataMerkPhone.realme),
+               isHuaweiFalse : Boolean(!dataMerkPhone.huawei)
+   
+               }
+               
+               // sertakan semua code yg telah dibuat di return
+               return {
+                   dataMerkPhone,
+                   resultBoolean,
+                   
+               };
 
-            }
-        },
+            
+            },
+            
+             
+        
 
         // 06. test instanceof operator
         testInstanceofOperator () {

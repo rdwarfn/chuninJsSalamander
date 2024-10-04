@@ -96,7 +96,7 @@ define(function (require) {
      */
 
     print("[testUndefinedValues]: run")
-    var testUndefinedValues = messages.testString()
+    var testUndefinedValues = messages.testUndefinedValues()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -125,7 +125,7 @@ define(function (require) {
      */
 
     print("[testBooleanValues]: run")
-    var testBooleanValues = messages.testString()
+    var testBooleanValues = messages.testBooleanValues()
 
     // diharapkan:
     // - print var yg telah dibuat
@@ -135,14 +135,10 @@ define(function (require) {
     //   setiap print harus bernilai boolean: 4 kali true, 4 kali false
 
     // tulis code print di bawah ini
-    print(testBooleanValues.isNokiaTrue)
-    print(testBooleanValues.isSamsungTrue)
-    print(testBooleanValues.isRealmeTrue)
-    print(testBooleanValues.isHuaweiTrue)
-    print(testBooleanValues.isNokiaFalse)
-    print(testBooleanValues.isSamsungFalse)
-    print(testBooleanValues.isRealmeFalse)
-    print(testBooleanValues.isHuaweiFalse)
+   
+    
+    print(testBooleanValues.dataMerkPhone)
+    print(testBooleanValues.resultBoolean)
 
     print("[testBooleanValues]: finish")
 
