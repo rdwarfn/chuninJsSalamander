@@ -418,6 +418,13 @@ define(function (require) {
     print("[testPlerlonteDom]: run")
     var testPlerlonteDom = messages.testPlerlonteDom()
 
+    /**
+     * Dalam sedikit example disini
+     * diharapkan:
+     * - Pahami cara kerja DOM
+     * - Buat example serupa dgn improve logic dn tampilan yg lebih baik
+     */
+
     // tulis code
     const btnPlerlonteDOM = document.getElementById("btnPlerlonteDOM");
 
