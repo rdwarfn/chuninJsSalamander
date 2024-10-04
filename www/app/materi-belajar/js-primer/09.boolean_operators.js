@@ -7,7 +7,7 @@
  */
 
 /**
- * example: Logika AND
+ * Logika AND
  */
 
 // true AND true returns true
@@ -26,11 +26,19 @@ console.log(false && "Foo") // false
 console.log("Foo" && false) // false
 
 // false && false(1==2) returns false
+/**
+ * bila terdapat operasi yg di dlm ()
+ * maka operasi tsb yg pertama di prioritas kan trlebih dahulu
+ */
 console.log(false && (1 == 2))
 
+// sama aja yg di atas sama dengn yg dibawah
+console.log(false && false)
+
+const a = (1 == 2)
 
 /**
- * example: Logika OR
+ * Logika OR
  */
 
 // true OR true returns true
@@ -53,3 +61,23 @@ console.log("Foo" || false);// Foo
 
 // false && false(1==2) returns false
 console.log(false || (1 == 2));// false
+
+
+/**
+ * Logika NOT
+ */
+
+// not true return false
+console.log(!true) // false
+
+// not false return true
+console.log(!false) // true
+
+// not string kosong
+console.log(!"") // true
+
+// not string ada isinya
+console.log(!"Foo") // false
+
+// not (aritmatika / logic perbandingan yg output nya bernilai true atau false)
+console.log(!(1==2)) // false
