@@ -81,3 +81,38 @@ console.log(!"Foo") // false
 
 // not (aritmatika / logic perbandingan yg output nya bernilai true atau false)
 console.log(!(1==2)) // false
+
+// slalu return boolean value
+var obj = {"id": 1, "username": "devjamaah"}
+const isObject = Boolean(obj) && typeof obj == "object"
+const isNotObject = Boolean(obj) && typeof obj != "object"
+
+var arry = []
+// apakah si array nilainya selain: False, 0, string kosong (""), NaN, null dan undefined
+const isArray = Boolean(arry) && Array.isArray(arry)
+// console.log(isArray) // true / valid
+
+// untuk convert non-boolean value ke boolean,
+// jgn prnah pake fungsi Boolean dgn construction new.
+// karena akan mengembalikan nilai obj, tidak primitive
+
+// const bWithNew = new Boolean("value") // object
+
+// contoh buat false values
+const bNoParam = Boolean();
+const bZero = Boolean(0);
+const bNull = Boolean(null);
+const bEmptyString = Boolean("");
+const bfalse = Boolean(false);
+
+// contoh buat true values
+const btrue = Boolean(true);
+const btrueString = Boolean("true");
+const bfalseString = Boolean("false");
+const bSuLin = Boolean("Su Lin");
+const bArrayProto = Boolean([]);
+const bObjProto = Boolean({});
+
+Boolean("[]") // string
+Boolean("{}") // string
+
