@@ -1,7 +1,14 @@
 // bad
-// const totalScore = this.reviewScore + '';
+// const totalScore = reviewScore + '';
 // good
-const totalScore = String(this.reviewScore);
+const totalScore = String(reviewScore);
+
+// const dataProduct = {
+//     name: "Kopi'",
+//     reviewScore: 7.5
+// }
+
+// dataProduct.reviewScore
 
 /**
  * Use parseInt() for Numbers
@@ -11,11 +18,21 @@ const totalScore = String(this.reviewScore);
 const inputValue = '4';
 // bad
 // const val = new Number(inputValue);
-// bad
+// not bad
 // const val = +inputValue;
 // bad
 // const val = inputValue >> 0;
-// bad
+// not bad
+
+/**
+ * case: const inputValue = '4'
+ * 
+ * Tugas:
+ * - Jelasin setiap pengunaan parseInt dan Number
+ * - Jelasin kelebihan dan kekurangan nya
+ * - Jelasin kenapa lebih direkomendasiin pake Number
+ *   untuk case yg diatas
+ */
 // const val = parseInt(inputValue);
 // good
 // const val = Number(inputValue);
