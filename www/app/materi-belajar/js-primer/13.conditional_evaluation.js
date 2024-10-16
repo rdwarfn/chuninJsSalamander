@@ -19,6 +19,14 @@ if ( foo === null || foo === undefined ) {}
 // GOOD
 if ( foo == null ) {}
 
+//Good
+var foo2 = null
+if(!foo){
+    console.log('Kondisi terpenuhi')
+} else {
+    console.log('Kondisi Gagal')
+}
+
 // Don't complicate matters
 return x === 0 ? 'sunday' : x === 1 ?
 'Monday' : 'Tuesday';
