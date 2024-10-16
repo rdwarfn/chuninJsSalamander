@@ -20,7 +20,7 @@ if ( foo === null || foo === undefined ) {}
 if ( foo == null ) {}
 
 //Good
-var foo2 = null
+var foo = null
 if(!foo){
     console.log('Kondisi terpenuhi')
 } else {
