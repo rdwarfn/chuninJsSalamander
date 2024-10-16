@@ -33,8 +33,26 @@ const inputValue = '4';
  * - Jelasin kenapa lebih direkomendasiin pake Number
  *   untuk case yg diatas
  */
+var sizeScreenPx = "1100px"
+var floatReviewProduct = "7.5" // float / floating
+
+parseInt(sizeScreenPx)
+
 // const val = parseInt(inputValue);
+// parseInt(floatReviewProduct) // 7
+// parseFloat(floatReviewProduct) // 7.5
+
 // good
 // const val = Number(inputValue);
+
 // good
 const val = parseInt(inputValue, 10);
+
+/**
+ * Boolean type case
+ * menggunakan booleans
+ */
+// const age = 0; // bad
+// const hasAge = new Boolean(age); // good
+// const hasAge = Boolean(age); // good
+// const hasAge = !!age;
