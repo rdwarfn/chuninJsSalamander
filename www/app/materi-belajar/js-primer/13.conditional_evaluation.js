@@ -28,8 +28,45 @@ if(!foo){
 }
 
 // Don't complicate matters
-return x === 0 ? 'sunday' : x === 1 ?
+/**
+ * (expression yg dibandingin) ? (process if) : (process else)
+ * 
+ * (e) ? (p if) : (p + expression else if) ? (p else if) : (p else)
+ */
+
+// if (expresssion) / (?)
+// else / (:)
+// else if (expresssion) / 
+
+var x = 3
+var getDay = x === 0 ? 'sunday' : x === 1 ?
 'Monday' : 'Tuesday';
+
+const daysOfInteger = [1, 2, 3]
+const daysOfStrings = [
+    {
+        id: 1,
+        name: "Sunday"
+    },
+    {
+        id: 2,
+        name: "Monday"
+    }
+]
+
+/**
+ * contoh daysOfInteger
+ */
+const getDayInt = daysOfInteger[0]
+
+// const getDayName = getDayInt === 1 ? "Minggu" : "Hari lainnya" // if else biasa
+// const getDayName = getDayInt === 1 ? "Minggu" : getDayInt === 2 ? "Senin" : "Hari lainnya"
+const getDayName = getDayInt === 1
+                ? "Minggu"
+                : getDayInt === 2
+                    ? "Senin" 
+                    : "Hari lainnya";
+
 
 // Better:
 if (x === 0) {
@@ -41,11 +78,21 @@ if (x === 0) {
 }
 
 // Even Better:
+var getDayWithSwitch = ''
+
 switch (x) {
+    // process 1
     case 0:
-    return 'Sunday';
+    getDayWithSwitch =  'Sunday';
+
+    // process 2
     case 1:
-    return 'Monday';
+    getDayWithSwitch = 'Monday';
+
+    // else
     default:
-    return 'Tuesday';
+    // getDayWithSwitch = 'Tuesday';
+    getDayWithSwitch = 'Hari lainnya';
 }
+
+console.log(getDayWithSwitch) // Sunday, Hari lainnya
