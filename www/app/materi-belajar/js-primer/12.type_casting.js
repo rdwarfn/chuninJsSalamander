@@ -56,3 +56,35 @@ const val = parseInt(inputValue, 10);
 // const hasAge = new Boolean(age); // good
 // const hasAge = Boolean(age); // good
 // const hasAge = !!age;
+
+/**
+ * case Boolean type
+ * let userAdmin = {
+ * id:1,
+ * username:'admin',
+ * password:'admin'}
+ * let isUserAdmin = Boolean(userAdmin)
+ * if (!isUserAdmin) {
+ * console.log('user admin not login')
+ * }else {
+ * 'user admin has logged'}
+ * 
+ * 
+ * let userLogin = false
+ * 
+ * if (!userLogin) {
+ * console.log ('user not login')
+ * } else {
+ * console.log ('user is login')
+ * }
+ * 
+ * let loginUser = true
+ * 
+ * if (loginUser) {
+ * console.log ('user is login')
+ * } else {
+ * console.log ('user not login')
+ * }
+ * 
+ * 
+ */
