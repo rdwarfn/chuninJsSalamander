@@ -549,4 +549,12 @@ define(function (require) {
     
     }
     print("[testDisplayImage]: finish")
+
+
+    print("[testFucntionLiteral]: run")
+    var testFucntionLiteral = messages.testFucntionLiteral()
+
+    // panggil semua function
+
+    print("[testFucntionLiteral]: finish")
 });

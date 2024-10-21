@@ -709,7 +709,25 @@ define(function () {
             return {
                 dataBand
             }
-        }
+        },
 
+
+        testFucntionLiteral () {
+            /**
+             * Tugas:
+             *  1. Buat function declaration,
+             *     yg mengembalikan nilai (return) dan tidak
+             * 
+             *  2. Buat function expression,
+             *     yg mengembalikan nilai (return) dan tidak
+             */
+
+            // Tulis code di bawah
+
+            // Sertakan semua code di return
+            return {
+
+            }
+        }
     };
 });
