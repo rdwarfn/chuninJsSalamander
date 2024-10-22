@@ -556,9 +556,13 @@ define(function (require) {
 
     // panggil semua function
     print(testFucntionLiteral.greet("Andi Law"))
-    print(testFucntionLiteral.greetNoReturn("Andi Law"))
+    testFucntionLiteral.greetNoReturn("Andi Law")
     print(testFucntionLiteral.checkScore("75"))
-    print(testFucntionLiteral.checkScoreNoReturn("55"))
+    testFucntionLiteral.checkScoreNoReturn("55")
+
+    // case yg 2
+    // testFucntionLiteral.greetNoReturn("Andi Law", print)
+    // testFucntionLiteral.checkScoreNoReturn("55", print)
     
 
     print("[testFucntionLiteral]: finish")

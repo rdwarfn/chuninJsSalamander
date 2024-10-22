@@ -739,6 +739,8 @@ define(function () {
 
     //   let greeting = greet('John')
 
+    //   function greetNoReturn(name, print){
+        // print("Hello" + " " + "My Name Is" + " " + name)
       function greetNoReturn(name){
         console.log ("Hello" + " " + "My Name Is" + " " + name)
       }
@@ -756,6 +758,9 @@ define(function () {
     //   let result = checkScore(75);
     //   console.log(result);
 
+    // const checkScoreNoReturn = function(score, print) {
+        // print("Lulus")
+        // print("Tidak Lulus")
       const checkScoreNoReturn = function(score) {
         if (score >= 60) {
             console.log("Lulus")
