@@ -555,6 +555,11 @@ define(function (require) {
     var testFucntionLiteral = messages.testFucntionLiteral()
 
     // panggil semua function
+    print(testFucntionLiteral.greet("Andi Law"))
+    print(testFucntionLiteral.greetNoReturn("Andi Law"))
+    print(testFucntionLiteral.checkScore("75"))
+    print(testFucntionLiteral.checkScoreNoReturn("55"))
+    
 
     print("[testFucntionLiteral]: finish")
 });
