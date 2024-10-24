@@ -771,13 +771,58 @@ define(function () {
 
     //   checkScoreNoReturn(75)
     //   checkScoreNoReturn(55)
+    function greets(timeOfDay) {
+      let greeting;
+    
+      switch (timeOfDay) {
+        case 'morning':
+          greeting = "Good morning!";
+          break;
+        case 'afternoon':
+          greeting = "Good afternoon!";
+          break;
+        case 'evening':
+          greeting = "Good evening!";
+          break;
+        case 'night':
+          greeting = "Good night!";
+          break;
+        default:
+          greeting = "Hello!";
+          break;
+      }
+    
+      return greeting;
+    }
+
+    const checkingScore = function(score){
+
+      let result
+
+      switch(true){
+        case score >= 90:
+        result = 'Score A'
+        break
+        case score >= 80:
+        result = 'Score B'
+        break
+        case score >= 70:
+        result = 'Score C'
+
+      }
+      return result
+
+    }
 
       // Sertakan semua code di return
       return {
             greet,
             greetNoReturn,
             checkScore,
-            checkScoreNoReturn
+            checkScoreNoReturn,
+            greets,
+            checkingScore
+
       };
     },
   };

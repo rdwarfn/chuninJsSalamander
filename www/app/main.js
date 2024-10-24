@@ -559,6 +559,9 @@ define(function (require) {
     testFucntionLiteral.greetNoReturn("Andi Law")
     print(testFucntionLiteral.checkScore("75"))
     testFucntionLiteral.checkScoreNoReturn("55")
+    print(testFucntionLiteral.greets("morning"))
+    print(testFucntionLiteral.checkingScore("82"))
+
 
     // case yg 2
     // testFucntionLiteral.greetNoReturn("Andi Law", print)
