@@ -561,6 +561,7 @@ define(function (require) {
     testFucntionLiteral.checkScoreNoReturn("55")
     print(testFucntionLiteral.greets("morning"))
     print(testFucntionLiteral.checkingScore("82"))
+    print(testFucntionLiteral.getById('1'))
 
 
     // case yg 2

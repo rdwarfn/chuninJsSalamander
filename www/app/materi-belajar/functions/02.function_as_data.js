@@ -31,7 +31,7 @@ const dataArray = function () {
         "age": 90,
     }, {
 
-        "id": "1",
+        "id": "3",
         "name": "Jamaah Ridwan",
         "age": 0.5,
     }]
@@ -83,3 +83,26 @@ for (let i = 0; i < dataBook.length; i++) {
         arryCategory.push(getBook.category)
     }
 }
+/**
+ * Example Case : Function as Data
+ */
+const getById = function(id) {
+    let data = dataArray();  
+    let result = null;  
+
+    
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].id === id) {
+            result = data[i]; 
+            break;  
+        }
+    }
+
+    
+    if (result) {
+        return result;  
+    } else {
+        return "Data not found";  
+    }
+};
+

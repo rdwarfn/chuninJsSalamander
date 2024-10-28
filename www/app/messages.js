@@ -815,6 +815,44 @@ define(function (require) {
 
     }
 
+    const dataArray = function () {
+      return [{
+          "id": "1",
+          "name": "Gus Hilmi",
+          "age": 170,
+      }, {
+          "id": "2",
+          "name": "Jamaah Hariz",
+          "age": 90,
+      }, {
+  
+          "id": "3",
+          "name": "Jamaah Ridwan",
+          "age": 0.5,
+      }]
+  }
+
+  const getById = function(id) {
+    let data = dataArray();  
+    let result = null;  
+
+    
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].id === id) {
+            result = data[i]; 
+            break;  
+        }
+    }
+
+    
+    if (result) {
+        return result;  
+    } else {
+        return "Data not found";  
+    }
+};
+
+
       // Sertakan semua code di return
       return {
             greet,
@@ -822,7 +860,8 @@ define(function (require) {
             checkScore,
             checkScoreNoReturn,
             greets,
-            checkingScore
+            checkingScore,
+            getById
 
       };
     },
