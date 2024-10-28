@@ -1,5 +1,5 @@
 //
-define(function () {
+define(function (require) {
   return {
     // 01. test materi variables
     testVariables() {
@@ -719,6 +719,7 @@ define(function () {
       };
     },
 
+    // 01. functions: test function literal
     testFucntionLiteral() {
       /**
        * Tugas:
@@ -825,5 +826,48 @@ define(function () {
 
       };
     },
+
+    // 02. functions: test function as data
+    testFuncAsData() {
+        const gusOfBooks = require("./materi-belajar/datasource/books")
+
+        /**
+         * Terdapat data books yng
+         * dgn bentuk Array of Object,
+         * berjumlah 721 item.
+         * Dengan attribute:
+         *  - title
+         *  - category
+         *  - description
+         *  - price
+         * 
+         * 
+         * Tugas:
+         * - Hitunglah jumlah unik category nya
+         * - Tampilkan dalam bentuk (2) table: books, category
+         * - Tambahkan di UI table nya:
+         *     - id/no (increment)
+         *     - updated (manual tgl & wkt skrg)
+         * 
+         * Catatan:
+         * - Lihat kembali materi sblm" nya.
+         * - Table menggunakan DOM
+         *   dan dgn bentuk terpisah:
+         *    - table book,
+         *    - table book categories.
+         *   Untk table book categories haruslah unik setiap datanya.
+         * - Tgl menggunakan moment pd updated dgn format bebas, sakarepmu mas
+         * - Boleh imporove dan eksperimen jungkir balik
+         */
+
+        // tulis code di bawah ini
+
+
+        // sertakan semua kode di return
+        return {
+            gusOfBooks
+        }
+      
+    }
   };
 });

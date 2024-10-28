@@ -569,4 +569,29 @@ define(function (require) {
     
 
     print("[testFucntionLiteral]: finish")
+
+
+    /**
+     * 02. Functions: function as data
+     * file materi  : functions/02.function_as_data.js
+     * file test    : app/messages.testFuncAsData
+     */
+    print("[testFuncAsData]: run")
+    var testFuncAsData = messages.testFuncAsData()
+
+    /**
+     * diharapkan:
+     * - Table UI dengan DOM,
+     *   dgn mengedit file index.html.
+     * - Terdapat table Books & Book Categories
+     * 
+     * Catatan:
+     * - Ngopi dulu
+     * - Prioritasin kerjaan di ws dlu
+     * - Banyak merenung, banyak anak, banyak rejeki, jgn lupa mandi
+     */
+
+    testFuncAsData.testOfBooks(print)
+    
+    print("[testFuncAsData]: finish")
 });
