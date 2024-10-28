@@ -843,9 +843,9 @@ define(function (require) {
          * 
          * 
          * Tugas:
-         * - Hitunglah jumlah unik category nya
-         * - Tampilkan dalam bentuk (2) table: books, category
-         * - Tambahkan di UI table nya:
+         * 1. Hitunglah jumlah unik category nya
+         * 2. Tampilkan dalam bentuk (2) table: books, category
+         * 3. Tambahkan di UI table nya:
          *     - id/no (increment)
          *     - updated (manual tgl & wkt skrg)
          * 
